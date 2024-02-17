@@ -1,0 +1,1 @@
+type HEX = `#${string}`;

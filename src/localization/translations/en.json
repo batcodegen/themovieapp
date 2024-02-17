@@ -1,0 +1,17 @@
+{
+  "language": "English",
+  "login": {
+    "email": "Email",
+    "loginBtn": "LOGIN",
+    "password": "Password",
+    "invalidEmail": "Invalid email",
+    "hasLimitChars": "Contains 8-15 characters",
+    "hasAlphaNumericChar": "Contains alphanumeric character",
+    "hasCapitalLetter": "Contains a capital letter",
+    "hasSpecialChar": "Contains a special character",
+    "emailAddress": "Email address",
+    "continue": "Continue",
+    "createAccount": "Create an Account",
+    "forgotPassword": "Forgotten password?"
+  }
+}

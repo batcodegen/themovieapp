@@ -1,0 +1,61 @@
+.absolute {
+  position: absolute
+}
+
+.bottom-0 {
+  bottom: 0px
+}
+
+.left-0 {
+  left: 0px
+}
+
+.right-0 {
+  right: 0px
+}
+
+.top-0 {
+  top: 0px
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem
+}
+
+.flex {
+  display: flex
+}
+
+.hidden {
+  display: none
+}
+
+.flex-1 {
+  flex: 1 1 0%
+}
+
+.border {
+  border-width: 1px
+}
+
+.bg-opacity-5 {
+  --tw-bg-opacity: 0.05
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.font-bold {
+  font-weight: 700
+}
+
+.line-through {
+  text-decoration-line: line-through
+}
