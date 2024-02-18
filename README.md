@@ -139,8 +139,8 @@ JDK version >= 17
 ## Test Coverage
 
 Test coverage stats below:
-<img src="screenshots/testcover.png" width=200 height=200>
 <br />
+<img src="screenshots/testcover.png" width=200 height=200>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
