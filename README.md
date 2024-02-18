@@ -59,9 +59,12 @@
 
 ## About The Project
 
-[<img src="screenshots/sc1.png" width=200 height=375>] [<img src="screenshots/sc2png" width=200 height=375>]
-[<img src="screenshots/sc3.png" width=200 height=375>] [<img src="screenshots/sc4.png" width=200 height=375>]
-[<img src="screenshots/sc5.png" width=200 height=375>] [<img src="screenshots/sc6.png" width=200 height=375>]
+<img src="screenshots/sc1.png" width=200 height=375> <img src="screenshots/sc2.png" width=200 height=375>
+<br />
+<img src="screenshots/sc3.png" width=200 height=375> <img src="screenshots/sc4.png" width=200 height=375>
+<br />
+<img src="screenshots/sc5.png" width=200 height=375> <img src="screenshots/sc6.png" width=200 height=375>
+<br />
 
 The project implements the following usecase.
 
