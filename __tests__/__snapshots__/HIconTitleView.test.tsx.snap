@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HIconTitleView Component Renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "marginTop": 2,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#fff",
+          "fontSize": 16,
+        },
+        undefined,
+        {
+          "fontFamily": "anticon",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    ?
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "marginStart": 5,
+          "textAlign": "left",
+        },
+        {
+          "color": undefined,
+        },
+      ]
+    }
+  >
+    title
+  </Text>
+</View>
+`;

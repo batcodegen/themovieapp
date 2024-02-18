@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextValidator component renders Login correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "width": "70%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": "#1fee3e",
+          "fontSize": 20,
+        },
+        undefined,
+        {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    󰄴
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "color": "white",
+          "marginHorizontal": 10,
+        },
+        {
+          "textDecorationColor": "gray",
+          "textDecorationLine": "line-through",
+          "textDecorationStyle": "solid",
+        },
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;

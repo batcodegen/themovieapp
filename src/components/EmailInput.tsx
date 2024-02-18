@@ -52,6 +52,7 @@ const EmailInput = ({onSubmitText, ...args}: EmailInputProps) => {
   return (
     <>
       <Pressable
+        testID="email-open-button"
         style={[styles.container, {borderColor: viewBorderColor}]}
         onPress={openModal}>
         <Fontisto name="email" size={18} color={'white'} />
@@ -64,7 +65,7 @@ const EmailInput = ({onSubmitText, ...args}: EmailInputProps) => {
           placeholderTextColor={'grey'}
         />
       </Pressable>
-      <Modal visible={visible} transparent>
+      <Modal testID="email-modal" visible={visible} transparent>
         <KeyboardAvoidingView style={styles.keyboardview} behavior="padding">
           <BlurView
             style={tw('absolute top-0 bottom-0 right-0 left-0')}
@@ -78,6 +79,7 @@ const EmailInput = ({onSubmitText, ...args}: EmailInputProps) => {
           <View style={styles.container}>
             <Fontisto name="email" size={18} />
             <TextInput
+              testID="email-text-input"
               value={value}
               onBlur={closeModal}
               onChangeText={handleTextInput}

@@ -10,13 +10,13 @@ import './src/localization/i18n';
 
 function App(): React.JSX.Element {
   return (
-    <TailwindProvider utilities={utilities}>
-      <Provider store={store}>
+    <Provider store={store}>
+      <TailwindProvider utilities={utilities}>
         <PersistGate loading={null} persistor={peristor}>
           <AppNavigator />
         </PersistGate>
-      </Provider>
-    </TailwindProvider>
+      </TailwindProvider>
+    </Provider>
   );
 }
 

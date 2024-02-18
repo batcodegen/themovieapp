@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "margin": 10,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={
+        {
+          "uri": "https://image.tmdb.org/t/p/w500https://example.com",
+        }
+      }
+      style={
+        {
+          "aspectRatio": 0.6666666666666666,
+          "borderRadius": 10,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={2}
+      style={
+        [
+          {
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "marginBottom": 5,
+            "marginTop": 8,
+            "textAlign": "left",
+          },
+          {
+            "color": undefined,
+          },
+        ]
+      }
+    >
+      Minions
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#fdc434",
+              "fontSize": 16,
+            },
+            undefined,
+            {
+              "fontFamily": "anticon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "marginStart": 5,
+              "textAlign": "left",
+            },
+            {
+              "color": undefined,
+            },
+          ]
+        }
+      >
+        4.5 (123)
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 16,
+            },
+            undefined,
+            {
+              "fontFamily": "anticon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "marginStart": 5,
+              "textAlign": "left",
+            },
+            {
+              "color": undefined,
+            },
+          ]
+        }
+      >
+        2024-01-20
+      </Text>
+    </View>
+  </View>
+</View>
+`;

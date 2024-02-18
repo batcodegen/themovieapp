@@ -25,7 +25,6 @@ export const useGetPopularMovies = () => {
 
   useEffect(() => {
     if (data && !isFetchedOnceRef.current) {
-      console.log('called--');
       isFetchedOnceRef.current = true;
       const {results, ...otherData} = data;
       setFetchedData(results);
@@ -35,7 +34,6 @@ export const useGetPopularMovies = () => {
 
   const fetchNextPage = async () => {
     try {
-      console.log('--page--', pageNumber);
       const response = await fetchMoreMovies({
         language: currentLanguageLocale,
         page: pageNumber,

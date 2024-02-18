@@ -80,6 +80,7 @@ const PasswordInput = ({onSubmitText, ...args}: PasswordInputProps) => {
   return (
     <>
       <Pressable
+        testID="password-open-button"
         style={[styles.container, {borderColor: viewBorderColor}]}
         onPress={openModal}>
         <Feather name="lock" size={18} color={'white'} />
@@ -93,7 +94,7 @@ const PasswordInput = ({onSubmitText, ...args}: PasswordInputProps) => {
           placeholderTextColor={'grey'}
         />
       </Pressable>
-      <Modal visible={visible} transparent>
+      <Modal testID="password-modal" visible={visible} transparent>
         <KeyboardAvoidingView style={styles.keyboardview} behavior="padding">
           <BlurView
             style={tw('absolute top-0 bottom-0 right-0 left-0')}
@@ -122,6 +123,7 @@ const PasswordInput = ({onSubmitText, ...args}: PasswordInputProps) => {
               <Feather name={!showPassword ? 'unlock' : 'lock'} size={18} />
             </Pressable>
             <TextInput
+              testID="password-text-input"
               value={value}
               secureTextEntry={showPassword}
               onBlur={closeModal}
