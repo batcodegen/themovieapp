@@ -59,9 +59,9 @@
 
 ## About The Project
 
-[<img src="screenshots/sc1.png" width=200 height=300>] [![Product Name Screen Shot2][product-screenshot2]]
-[![Product Name Screen Shot3][product-screenshot3]] [![Product Name Screen Shot4][product-screenshot4]]
-[![Product Name Screen Shot5][product-screenshot5]] [![Product Name Screen Shot6][product-screenshot6]]
+[<img src="screenshots/sc1.png" width=200 height=375>] [<img src="screenshots/sc2png" width=200 height=375>]
+[<img src="screenshots/sc3.png" width=200 height=375>] [<img src="screenshots/sc4.png" width=200 height=375>]
+[<img src="screenshots/sc5.png" width=200 height=375>] [<img src="screenshots/sc6.png" width=200 height=375>]
 
 The project implements the following usecase.
 
