@@ -50,6 +50,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#Test Coverage">Test Coverage</a></li>
+    <li><a href="#Roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -131,6 +133,25 @@ JDK version >= 17
    npx react-native run-android
    ```
    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- TEST COVERAGE -->
+
+## Test Coverage
+
+Test coverage stats below:
+<img src="screenshots/testcover.png" width=200 height=200>
+<br />
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [ ] Add additional testcases for 100% coverage
+- [ ] Add micro-animations
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
