@@ -87,9 +87,9 @@ The project implements the following usecase.
 
 ### Built With
 
-- [![React-Native][RN]][React-Native]
-- [![Redux-url][Redux.js]][Redux-url]
-- [![TS-url][ts.org]][ts.org]
+- [![React-Native][React-Native]][RN]
+- [![Redux-url][Redux-url]][Redux.js]
+- [![TS-url][tsurl]][ts.org]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,5 +199,5 @@ Free icon and image resources by:
 [RN]: https://reactnative.dev/
 [Redux-url]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
 [Redux.js]: https://redux.js.org/introduction/getting-started
-[TS-url]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[tsurl]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
 [ts.org]: https://www.typescriptlang.org/
