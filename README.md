@@ -93,7 +93,7 @@ The project implements the following usecase.
 ## Getting Started
 
 To set up your project locally.
-Get a local copy up and running follow these simple example steps.
+Get a local copy up and running follow below steps.
 
 ### Prerequisites
 
@@ -101,8 +101,6 @@ Node.js version > 16
 JDK version >= 17
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a free API Key at [TMDB](https://www.themoviedb.org/login)
 2. Clone the repo
