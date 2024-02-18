@@ -1,79 +1,181 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-# Getting Started
+<a name="readme-top"></a>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Step 1: Start the Metro Server
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="src/assets/applogo.png" alt="Logo" width="80" height="80">
+  </a>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+  <h3 align="center">THE MOVIE APP</h3>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+  <p align="center">
+    A display project!
+    <br />
+  </p>
+</div>
 
-```bash
-# using npm
-npm start
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-# OR using Yarn
-yarn start
-```
+<!-- ABOUT THE PROJECT -->
 
-## Step 2: Start your Application
+## About The Project
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+[![Product Name Screen Shot1][product-screenshot1]] [![Product Name Screen Shot2][product-screenshot2]]
+[![Product Name Screen Shot3][product-screenshot3]] [![Product Name Screen Shot4][product-screenshot4]]
+[![Product Name Screen Shot5][product-screenshot5]] [![Product Name Screen Shot6][product-screenshot6]]
 
-### For Android
+The project implements the following usecase.
 
-```bash
-# using npm
-npm run android
+- Screen1:
 
-# OR using Yarn
-yarn android
-```
+1. Form contains two text fields: one is email and other one is password
+2. Email must be valid email address
+3. Password size limitation between 8 - 15 characters(Alpha Number with at least one Capital Letter and 1 Special Character)
+4. Submit button to be enabled only in case of email & password are valid otherwise it will be disabled
+5. Once Submit button is active move to next screen without any Remote API Call.
 
-### For iOS
+- Screen2:
 
-```bash
-# using npm
-npm run ios
+1. Using Restful Web APIs load the list of popular Movies on this screen in a grid view with number of columns as 2.
+2. Each Item contains the name and image. Name to be taken from the “title” and image from “poster_path” from the response.
 
-# OR using Yarn
-yarn ios
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### Built With
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- [![React-Native][RN]][React-Native]
+- [![Redux-url][Redux.js]][Redux-url]
+- [![TS-url][ts.org]][ts.org]
 
-## Step 3: Modifying your App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Now that you have successfully run the app, let's modify it.
+<!-- GETTING STARTED -->
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Getting Started
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+To set up your project locally.
+Get a local copy up and running follow these simple example steps.
 
-## Congratulations! :tada:
+### Prerequisites
 
-You've successfully run and modified your React Native App. :partying_face:
+Node.js version > 16
+JDK version >= 17
 
-### Now what?
+### Installation
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-# Troubleshooting
+1. Get a free API Key at [TMDB](https://www.themoviedb.org/login)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/batcodegen/themovieapp.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Create a `.env` in root folder and enter your TMDB token
+   ```js
+   TMDB_TOKEN = ENTER_YOUR_API;
+   ```
+5. Start RN packager
+   ```sh
+   npm start
+   ```
+6. Run build for ios
+   ```sh
+   npx react-native run-ios
+   ```
+7. Run build for android
+   ```sh
+   npx react-native run-android
+   ```
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+<!-- CONTACT -->
 
-# Learn More
+## Contact
 
-To learn more about React Native, take a look at the following resources:
+Prakhar Bangar - [Linkedin profile](https://www.linkedin.com/in/prakhar-bangar-289198a2/)
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Project Link: [https://github.com/batcodegen/themovieapp](https://github.com/batcodegen/themovieapp)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+Free icon and image resources by:
+
+- [Img Shields](https://shields.io)
+- [Vector Icons](https://github.com/oblador/react-native-vector-icons)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot1]: screenshots/sc1.png
+[product-screenshot2]: screenshots/sc2.png
+[product-screenshot3]: screenshots/sc3.png
+[product-screenshot4]: screenshots/sc4.png
+[product-screenshot5]: screenshots/sc5.png
+[product-screenshot6]: screenshots/sc6.png
+[React-Native]: https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[RN]: https://reactnative.dev/
+[Redux-url]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
+[Redux.js]: https://redux.js.org/introduction/getting-started
+[TS-url]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[ts.org]: https://www.typescriptlang.org/
