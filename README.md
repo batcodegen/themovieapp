@@ -59,7 +59,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot1][product-screenshot1]] [![Product Name Screen Shot2][product-screenshot2]]
+[<img src="Assets/icon.png" width=200 height=300>] [![Product Name Screen Shot2][product-screenshot2]]
 [![Product Name Screen Shot3][product-screenshot3]] [![Product Name Screen Shot4][product-screenshot4]]
 [![Product Name Screen Shot5][product-screenshot5]] [![Product Name Screen Shot6][product-screenshot6]]
 
