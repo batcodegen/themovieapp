@@ -2,7 +2,7 @@ import {configureStore} from '@reduxjs/toolkit';
 import {useDispatch} from 'react-redux';
 import rootReducer from './rootReducer';
 import {popularMoviesApi} from '../api/popularmovie';
-import {persistStore} from 'redux-persist';
+import {Persistor, persistStore} from 'redux-persist';
 
 export const store = configureStore({
   reducer: rootReducer,
@@ -11,7 +11,7 @@ export const store = configureStore({
       popularMoviesApi.middleware,
     ),
 });
-export const peristor = persistStore(store);
+export const peristor: Persistor = persistStore(store);
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;

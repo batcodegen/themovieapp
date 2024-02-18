@@ -13,13 +13,8 @@ const Home = () => {
   const {colors} = useTheme();
   const {t} = useTranslation();
   useChangeLanguage();
-  const {
-    data,
-    error,
-    fetchNextPage,
-    isLoadingMoreMovies,
-    isFetchingMoreMovies,
-  } = useGetPopularMovies();
+  const {data, error, fetchNextPage, isLoadingMoreMovies} =
+    useGetPopularMovies();
 
   const renderMovieCard = ({item}: {item: Movie}) => {
     return (

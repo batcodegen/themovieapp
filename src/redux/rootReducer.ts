@@ -1,9 +1,15 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage, {
+  AsyncStorageStatic,
+} from '@react-native-async-storage/async-storage';
 import {combineReducers} from '@reduxjs/toolkit';
 import {persistReducer} from 'redux-persist';
 import authReducer from './authReducer';
 import {popularMoviesApi} from '../api/popularmovie';
-const persistConfig = {
+type PersistConfigType = {
+  key: string;
+  storage: AsyncStorageStatic;
+};
+const persistConfig: PersistConfigType = {
   key: 'root',
   storage: AsyncStorage,
 };

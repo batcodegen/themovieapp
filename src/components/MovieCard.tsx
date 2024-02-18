@@ -1,6 +1,5 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React, {memo} from 'react';
-import {Movie} from '../api/popularmovie';
 import HIconTitleView from './HIconTitleView';
 import {ENDPOINT} from '../api/endpoints';
 import {useTheme} from '@react-navigation/native';
