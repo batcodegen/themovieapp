@@ -8,10 +8,11 @@
     "hasLimitChars": "Contains 8-15 characters",
     "hasAlphaNumericChar": "Contains alphanumeric character",
     "hasCapitalLetter": "Contains a capital letter",
-    "hasSpecialChar": "Contains a special character",
-    "emailAddress": "Email address",
-    "continue": "Continue",
-    "createAccount": "Create an Account",
-    "forgotPassword": "Forgotten password?"
+    "hasSpecialChar": "Contains a special character"
+  },
+  "home": {
+    "changeTo": "Change to",
+    "logout": "Logout",
+    "popularMovies": "Popular Movies"
   }
 }

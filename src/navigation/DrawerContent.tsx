@@ -1,12 +1,26 @@
 import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import {useTheme} from '@react-navigation/native';
-import React from 'react';
+import React, {ComponentProps, memo} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import FontA from 'react-native-vector-icons/FontAwesome';
+import {alertnateLanguage, toggleLanguage} from '../utils/layout';
+import {useTranslation} from 'react-i18next';
+import {useLogin} from '../hooks/useLogin';
+
+interface DisplayIconProps {
+  name: ComponentProps<typeof FontA>['name'];
+}
+
+const DisplayIcon = memo(({name}: DisplayIconProps) => {
+  const {colors} = useTheme();
+  return <FontA name={name} size={20} color={colors.textAlt} />;
+});
 
 const DrawerContent = ({...props}) => {
   const {navigation} = props;
   const {colors} = useTheme();
+  const {t} = useTranslation();
+  const {callLogoutApi} = useLogin();
 
   return (
     <DrawerContentScrollView
@@ -35,28 +49,23 @@ const DrawerContent = ({...props}) => {
         </Text>
       </View>
       <DrawerItem
-        label={'Change'}
-        labelStyle={{color: colors.textAlt, marginStart: -20}}
-        icon={() => (
-          <FontA name={'language'} size={20} color={colors.textAlt} />
-        )}
+        label={`${t('home.changeTo')} ${alertnateLanguage}`}
+        labelStyle={[styles.margin, {color: colors.textAlt}]}
+        icon={() => <DisplayIcon name="language" />}
         onPress={() => {
           navigation?.closeDrawer();
-          // Handle language change
+          toggleLanguage();
         }}
       />
       <DrawerItem
-        label={'Logout'}
+        label={t('home.logout')}
         style={styles.shareContainer}
-        labelStyle={{color: colors.textAlt}}
-        icon={() => (
-          <FontA name={'power-off'} size={20} color={colors.textAlt} />
-        )}
+        labelStyle={[styles.margin, {color: colors.textAlt}]}
+        icon={() => <DisplayIcon name="power-off" />}
         onPress={() => {
-          console.log('logout');
+          callLogoutApi();
         }}
       />
-      {/* <Logout /> */}
     </DrawerContentScrollView>
   );
 };
@@ -83,4 +92,5 @@ const styles = StyleSheet.create({
     flex: 1,
     marginBottom: 20,
   },
+  margin: {marginStart: -20},
 });

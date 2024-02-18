@@ -1,44 +1,36 @@
-import {
-  View,
-  Text,
-  ImageBackground,
-  Image,
-  StyleSheet,
-  Pressable,
-  I18nManager,
-} from 'react-native';
-import React, {useEffect, useState} from 'react';
-import {useTailwind} from 'tailwind-rn';
-import {useTheme} from '@react-navigation/native';
 import {BlurView} from '@react-native-community/blur';
+import {useTheme} from '@react-navigation/native';
+import React, {useState} from 'react';
 import {useTranslation} from 'react-i18next';
-import EmailInput from '../components/EmailInput';
-import RNRestart from 'react-native-restart';
-import PasswordInput from '../components/PasswordInput';
-import Button from '../components/Button';
+import {
+  Image,
+  ImageBackground,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {isRTL} from '../utils/layout';
+import {useTailwind} from 'tailwind-rn';
+import Button from '../components/Button';
+import EmailInput from '../components/EmailInput';
+import PasswordInput from '../components/PasswordInput';
+import {useChangeLanguage} from '../hooks/useChangeLanguage';
 import {useLogin} from '../hooks/useLogin';
+import {isRTL, toggleLanguage} from '../utils/layout';
 
 const loginBackgroundImg = require('../assets/loginbg.png');
 const Login = () => {
   const tw = useTailwind();
   const {colors} = useTheme();
   const insets = useSafeAreaInsets();
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [isValidEmail, setIsValidEmail] = useState<boolean>(false);
   const [isValidPassword, setIsValidPassword] = useState<boolean>(false);
   const {callLoginApi} = useLogin();
-
-  useEffect(() => {
-    if (isRTL) {
-      i18n.changeLanguage('ar');
-    } else {
-      i18n.changeLanguage('en');
-    }
-  }, [isRTL]);
+  useChangeLanguage();
 
   const checkIsDisabled: boolean = !isValidEmail || !isValidPassword;
 
@@ -58,14 +50,7 @@ const Login = () => {
       />
       <Pressable
         style={[styles.langContainer, {top: insets.top + 10}]}
-        onPress={() => {
-          if (isRTL) {
-            I18nManager.forceRTL(false);
-          } else {
-            I18nManager.forceRTL(true);
-          }
-          RNRestart.restart();
-        }}>
+        onPress={toggleLanguage}>
         <Text style={styles.switch}>{isRTL ? 'EN' : 'AR'}</Text>
       </Pressable>
       <View style={styles.container}>

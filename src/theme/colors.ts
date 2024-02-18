@@ -25,7 +25,7 @@ const LightTheme: ExtendedTheme = {
 const DarkTheme: ExtendedTheme = {
   dark: true,
   colors: {
-    primary: '#171412',
+    primary: '#FFFFFF',
     background: '#121212',
     card: '#181818',
     text: '#FFFFFF',

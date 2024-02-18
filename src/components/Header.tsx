@@ -19,7 +19,9 @@ const Header = ({screenName}: HeaderProps) => {
         <Ionicons name="menu" size={30} color={colors.text} />
       </Pressable>
       <View style={styles.titleContainer}>
-        <Text style={styles.titleText}>{screenName}</Text>
+        <Text style={[styles.titleText, {color: colors.text}]}>
+          {screenName}
+        </Text>
       </View>
       <View style={styles.rightContainer} />
     </View>
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: 10,
   },
-  iconContainer: {flex: 0.2},
+  iconContainer: {flex: 0.2, alignItems: 'flex-start'},
   titleContainer: {flex: 0.6, alignItems: 'center'},
   titleText: {fontSize: 18, fontWeight: 'bold', letterSpacing: 0.2},
   rightContainer: {flex: 0.2},

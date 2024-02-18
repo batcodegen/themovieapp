@@ -8,10 +8,11 @@
     "hasLimitChars": "يحتوي على 8-15 حرفًا",
     "hasAlphaNumericChar": "يحتوي على حرف أبجدي رقمي",
     "hasCapitalLetter": "يحتوي على حرف كبير",
-    "hasSpecialChar": "يحتوي على طابع خاص",
-    "emailAddress": "Email address",
-    "continue": "Continue",
-    "createAccount": "Create an Account",
-    "forgotPassword": "Forgotten password?"
+    "hasSpecialChar": "يحتوي على طابع خاص"
+  },
+  "home": {
+    "changeTo": "التغيير الى",
+    "logout": "تسجيل خروج",
+    "popularMovies": "أفلام شعبية"
   }
 }
