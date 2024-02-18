@@ -38,9 +38,15 @@ const Home = () => {
 
   if (error) {
     return (
-      <View>
-        <Text>Error</Text>
-      </View>
+      <DrawerWrapper>
+        <SafeAreaView
+          style={[styles.container, {backgroundColor: colors.background}]}>
+          <Header screenName={t('home.popularMovies')} />
+          <Text style={[styles.error, {color: colors.error}]}>
+            {JSON.stringify(error)}
+          </Text>
+        </SafeAreaView>
+      </DrawerWrapper>
     );
   }
 
@@ -73,4 +79,5 @@ export default Home;
 const styles = StyleSheet.create({
   container: {flex: 1},
   loadingMore: {textAlign: 'center'},
+  error: {fontSize: 16, textAlign: 'center'},
 });
